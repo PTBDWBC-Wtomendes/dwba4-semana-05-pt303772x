@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscreva-se</title>
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+  <style>
+    .tabs {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    form {
+      max-width: 980px;
+    }
+
+    fieldset {
+      margin-bottom: 8px;
+    }
+
+    .linha {
+      margin: 8px 0;
+    }
+
+    .linha label {
+      display: inline-block;
+      min-width: 125px;
+    }
+
+    .sexo {
+      margin-top: 8px;
+    }
+
+    .acoes {
+      margin-top: 10px;
+      margin-bottom: 14px;
+    }
+
+    .social {
+      margin-top: 20px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div id="topo">
+    <nav class="tabs">
+      <a href="home.html">HOME</a> |
+      <a href="eventos.html">EVENTOS</a> |
+      <a href="contato.html">CONTATO</a> |
+      <a href="sobre.html">SOBRE</a>|
+      <a href="entrar.html">ENTRAR </a>
+    </nav>
+
+  <div>
+      <img src="assets/Logo.jpg" alt="Logo IFSP" width="480">
+    </div>
+
+    <form action="#" method="post">
+      <div class="linha">
+
+        <fieldset>
+        <label for="evento">Evento</label>
+        <select id="evento" name="evento">
+          <option>Voe sem asas</option>
+          <option>Semana da Tecnologia</option>
+          <option>Feira de Estagios</option>
+        </select>
+        </fieldset>
+      </div>
+
+      <fieldset>
+        <legend>Informações de Acesso</legend>
+
+        <div class="linha">
+          <label for="usuario">Usuario</label>
+          <input type="text" id="usuario" name="usuario" required>
+        </div>
+
+        <div class="linha">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" required>
+        </div>
+
+        <div class="linha">
+          <label for="confirmar">Confirme a Senha</label>
+          <input type="password" id="confirmar" name="confirmar" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+
+        <div class="linha">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" name="nome" size="30" required>
+        </div>
+
+        <div class="linha">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" size="30" required>
+        </div>
+
+        <div class="linha">
+          <label for="celular">Celular</label>
+          <input type="tel" id="celular" name="celular" required>
+          (99) 99999-9999
+        </div>
+
+        <fieldset class="sexo">
+          <legend>Sexo</legend>
+          <label><input type="radio" name="sexo" value="masculino" required> Masculino</label>
+          <label><input type="radio" name="sexo" value="feminino" required> Feminino</label>
+        </fieldset>
+
+        <div class="linha">
+          <label for="nascimento">Data de Nascimento</label>
+          <input type="date" id="nascimento" name="nascimento" required>
+        </div>
+
+        <div class="linha">
+          <label for="cor">Cor Favorita</label>
+          <input type="color" id="cor" name="cor" value="#000000" >
+        </div>
+
+        <div class="linha">
+          <label for="github">Perfil no Github</label>
+          <input type="url" id="github" name="github" size="30" required>
+        </div>
+      </fieldset>
+
+      <div class="acoes">
+        <button type="submit">Inscrever</button>
+        <button type="reset">Limpar</button>
+      </div>
+    </form>
+
+
+  
+      <div class="social">
+        <a href="https://www.facebook.com/ifspoficial" target="_blank">
+        <img src="assets/facebook.png" alt="Facebook IFSP" width="40">
+      </a>
+      </div>
+
+    <footer class="social">
+      IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100
+    </footer>
+  </div>
+
+</body>
+
+</html>

@@ -4,7 +4,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato</title>
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+  <style>
+    .tabs {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    .social {
+      margin-top: 20px;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 28px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    fieldset {
+      margin-top: 6px;
+    }
+  </style>
 </head>
 <body>
+
+  <div id="topo">
+    <nav class="tabs">
+      <a href="home.html">HOME</a> |
+      <a href="eventos.html">EVENTOS</a> |
+      <a href="contato.html">CONTATO</a> |
+      <a href="sobre.html">SOBRE</a>|
+      <a href="entrar.html">ENTRAR </a>
+    </nav>
+
+    <div>
+      <img src="assets/Logo.jpg" alt="Logo IFSP" width="480">
+    </div>
+
+    <h1>Mande uma mensagem</h1>
+
+    <form action="#" method="post">
+      <ul>
+        <li>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+        </li>
+
+        <li>
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" required>
+        </li>
+
+        <li>
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" required>
+          (99) 99999-9999
+        </li>
+
+        <li>
+          <label for="assunto">Assunto</label>
+          <select id="assunto" name="assunto" required>
+            <option value="" selected disabled>-- Selecione --</option>
+            <option value="duvida">Dúvida</option>
+            <option value="elogio">Elogio</option>
+            <option value="reclamacao">Reclamação</option>
+          </select>
+        </li>
+
+        <li>
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="3" cols="40" required></textarea>
+        </li>
+
+        <li>
+          <fieldset>
+            <legend>Opções de Resposta</legend>
+            <label for="resposta-email">E-Mail</label>
+            <input type="checkbox" id="resposta-email" name="resposta" value="email">
+            <label for="resposta-telefone">Telefone</label>
+            <input type="checkbox" id="resposta-telefone" name="resposta" value="telefone">
+          </fieldset>
+        </li>
+
+        <li>
+          <button type="submit">Enviar</button>
+        </li>
+      </ul>
+    </form>
+
+    <div class="social">
+      <a href="#topo">
+        <img src="assets/MoveTop.png" alt="Voltar ao topo" width="40">
+      </a>
+    </div>
+
+    <div class="social">
+      <a href="https://www.facebook.com/ifspoficial" target="_blank">
+        <img src="assets/facebook.png" alt="Facebook IFSP" width="40">
+      </a>
+    </div>
+
+    <footer class="social">
+      IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100
+    </footer>
+  </div>
+
 </body>
 </html>

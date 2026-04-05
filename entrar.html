@@ -3,21 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar</title>
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  <title>Sobre</title>
-</head>
+
   <style>
     .tabs {
       text-align: right;
       margin-bottom: 20px;
     }
 
-     .social {
+    .social {
       margin-top: 20px;
     }
+
+    .linha-login {
+      margin-bottom: 8px;
+    }
+
+    .linha-login label {
+      display: inline-block;
+      min-width: 52px;
+    }
+
+    .acoes-login {
+      margin-top: 6px;
+    }
   </style>
+</head>
 <body>
-  
   <div id="topo">
     <nav class="tabs">
       <a href="home.html">HOME</a> |
@@ -27,18 +40,39 @@
       <a href="entrar.html">ENTRAR </a>
     </nav>
 
-  <div>
+    <div>
       <img src="assets/Logo.jpg" alt="Logo IFSP" width="480">
     </div>
-  
-      <div class="social">
-        <a href="https://www.facebook.com/ifspoficial" target="_blank">
-        <img src="assets/facebook.png" alt="Facebook IFSP" width="40">
-      </a>
+
+    <h1>Entrar</h1>
+
+    <form action="#" method="post">
+      <div class="linha-login">
+        <label for="usuario">Usuário</label>
+        <input type="text" id="usuario" name="usuario" required>
       </div>
 
-    <footer>
+      <div class="linha-login">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" required>
+      </div>
+
+      <div class="acoes-login">
+        <button type="submit">Entrar</button>
+        <a href="#">Esqueci a senha</a>
+      </div>
+    </form>
+
+
+    <div class="social">
+      <a href="https://www.facebook.com/ifspoficial" target="_blank">
+        <img src="assets/facebook.png" alt="Facebook IFSP" width="40">
+      </a>
+    </div>
+
+    <footer class="social">
       IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100
     </footer>
+  </div>
 </body>
 </html>
